@@ -40,19 +40,19 @@
 #define FG_METER_RESISTANCE	0
 
 /* Qmax for battery  */
-#define Q_MAX_POS_50	2931
-#define Q_MAX_POS_25	2866
-#define Q_MAX_POS_0		2925
-#define Q_MAX_NEG_10	2795
+#define Q_MAX_POS_50	3074
+#define Q_MAX_POS_25	3064
+#define Q_MAX_POS_0		3068
+#define Q_MAX_NEG_10	2956
 
-#define Q_MAX_POS_50_H_CURRENT	2894
-#define Q_MAX_POS_25_H_CURRENT	2813
-#define Q_MAX_POS_0_H_CURRENT	2172
-#define Q_MAX_NEG_10_H_CURRENT	726
+#define Q_MAX_POS_50_H_CURRENT	3058
+#define Q_MAX_POS_25_H_CURRENT	3033
+#define Q_MAX_POS_0_H_CURRENT	2685
+#define Q_MAX_NEG_10_H_CURRENT	1750
 
 
 /* Discharge Percentage */
-#define OAM_D5	1		/*  1 : D5,   0: D2*/
+#define OAM_D5	0		/*  1 : D5,   0: D2*/
 
 
 /* battery meter parameter */
@@ -62,7 +62,7 @@
 #else
 #define CUST_TRACKING_POINT	1
 #endif
-#define CUST_R_SENSE         56
+#define CUST_R_SENSE         20
 #define CUST_HW_CC	0
 #define AGING_TUNING_VALUE	103
 #define CUST_R_FG_OFFSET	0
@@ -91,15 +91,15 @@
 #define AGING1_LOAD_SOC	70
 #define AGING1_UPDATE_SOC	30
 #define BATTERYPSEUDO100	95
-#define BATTERYPSEUDO1 6
+#define BATTERYPSEUDO1 7
 
 #define Q_MAX_BY_SYS			/*8. Qmax variant by system drop voltage.*/
-#define Q_MAX_SYS_VOLTAGE		3350
+#define Q_MAX_SYS_VOLTAGE		3050
 #define SHUTDOWN_GAUGE0
 #define SHUTDOWN_GAUGE1_XMINS
 #define SHUTDOWN_GAUGE1_MINS	60
 
-#define SHUTDOWN_SYSTEM_VOLTAGE	3400
+#define SHUTDOWN_SYSTEM_VOLTAGE	3100
 #define CHARGE_TRACKING_TIME	60
 #define DISCHARGE_TRACKING_TIME	10
 
@@ -107,10 +107,10 @@
 /* SW Fuel Gauge */
 #define MAX_HWOCV	5
 #define MAX_VBAT	90
-#define DIFFERENCE_HWOCV_VBAT	30
+#define DIFFERENCE_HWOCV_VBAT	10
 
 /* fg 1.0 */
-#define CUST_POWERON_DELTA_CAPACITY_TOLRANCE	40
+#define CUST_POWERON_DELTA_CAPACITY_TOLRANCE	30
 #define CUST_POWERON_LOW_CAPACITY_TOLRANCE	5
 #define CUST_POWERON_MAX_VBAT_TOLRANCE	90
 #define CUST_POWERON_DELTA_VBAT_TOLRANCE	30
